@@ -1,5 +1,4 @@
 class Satelite:
-    """Representa un satélite con su posición en un instante dado."""
 
     def __init__(self, nombre, numero_catalogo, latitud, longitud, altitud):
         if not isinstance(nombre, str) or not nombre.strip():
