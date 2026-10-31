@@ -36,9 +36,7 @@ Tp_integrador2/
 
 ## Requisitos
 
-Para ejecutar el proyecto se necesita tener instalado Python.
-
-Las bibliotecas utilizadas se encuentran en el archivo `requirements.txt`:
+Para utilizar el proyecto  se necesita tener instalado Python y Las bibliotecas utilizadas se encuentran en el archivo `requirements.txt`:
 
 - Skyfield
 - Pytest
