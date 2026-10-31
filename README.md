@@ -4,9 +4,8 @@
 
 ## Descripción del proyecto
 
-Este proyecto consiste en desarrollar un programa en Python que permite consultar información sobre satélites a partir de un archivo JSON.
-
-El programa obtiene la posición de los satélites utilizando la biblioteca Skyfield y permite realizar diferentes consultas desde la terminal.
+Este trabajo va consisitir en desarrollar un programa en Python que permite consultar información sobre satélites a partir de un archivo JSON,
+el programa obtiene la posición de los satélites utilizando la biblioteca Skyfield y permite realizar diferentes consultas desde la terminal.
 
 Las consultas disponibles son:
 
@@ -94,7 +93,7 @@ El programa muestra:
 
 ### Consulta por zona geográfica
 
-Para buscar satélites dentro de una zona, se deben indicar cuatro coordenadas:
+Para buscar satélites dentro de una zona se deben indicar cuatro coordenadas:
 
 ```powershell
 python consultar_satelites.py datos/satelites.json zona lon_min lat_min lon_max lat_max
@@ -111,7 +110,6 @@ El programa muestra la cantidad de satélites encontrados y la descripción de c
 ## Ejecución de los tests
 
 El proyecto cuenta con pruebas automáticas para verificar el funcionamiento de la clase `Satelite` y las funciones del catálogo.
-
 Para ejecutar todos los tests:
 
 ```powershell
@@ -124,7 +122,7 @@ Para ejecutar los tests y medir la cobertura del código:
 python -m pytest --cov=satelite --cov=catalogo --cov-report=term-missing
 ```
 
-## Archivos principales
+## Archivos principales del trabajo 
 
 - `satelite.py`: contiene la clase `Satelite`, sus validaciones y sus métodos.
 - `catalogo.py`: permite cargar los registros, crear el catálogo, calcular estadísticas y filtrar satélites por zona.
