@@ -11,7 +11,6 @@ from catalogo import (
 
 
 def mostrar_resumen(catalogo):
-    """Muestra un resumen de los satélites por tipo de órbita."""
 
     resumen = resumir_por_orbita(catalogo)
 
@@ -27,7 +26,6 @@ def mostrar_resumen(catalogo):
 
 
 def mostrar_zona(catalogo, lon_min, lat_min, lon_max, lat_max):
-    """Muestra los satélites que están dentro de una zona."""
 
     resultado = satelites_en_zona(
         catalogo,
@@ -44,7 +42,6 @@ def mostrar_zona(catalogo, lon_min, lat_min, lon_max, lat_max):
 
 
 def main():
-    """Procesa los argumentos y ejecuta la consulta solicitada."""
 
     if len(sys.argv) < 3:
         print("Uso: python consultar_satelites.py archivo.json resumen")
