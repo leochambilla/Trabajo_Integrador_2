@@ -6,7 +6,6 @@ from satelite import Satelite
 
 
 def cargar_registros(ruta_archivo):
-    """Lee el archivo JSON y devuelve la lista de registros."""
 
     with open(ruta_archivo, "r") as archivo:
         registros = json.load(archivo)
@@ -15,7 +14,7 @@ def cargar_registros(ruta_archivo):
 
 
 def crear_catalogo(registros):
-    """Recibe los registros y devuelve una lista de objetos Satelite."""
+    
 
     catalogo = []
 
@@ -41,7 +40,7 @@ def crear_catalogo(registros):
 
 
 def resumir_por_orbita(catalogo):
-    """Devuelve cantidad, mínimo, máximo y promedio de altitud por órbita."""
+
 
     altitudes_por_orbita = {
         "LEO": [],
@@ -76,7 +75,7 @@ def resumir_por_orbita(catalogo):
 
 
 def satelites_en_zona(catalogo, lon_min, lat_min, lon_max, lat_max):
-    """Devuelve los satélites que se encuentran dentro de una zona."""
+
 
     resultado = []
 
